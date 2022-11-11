@@ -40,19 +40,9 @@ class DataStore {
         "swordsman@gmail.com", "pillowsLover@gmail.com"
     ]
     
-    static let source = DataStore(
-        names: self.names,
-        surnames: self.surnames,
-        phoneNumbers: self.phoneNumbers,
-        emails: self.emails
-    )
+    static let source = DataStore()
     
-    init(names: [String], surnames: [String], phoneNumbers: [String], emails: [String]) {
-        self.names = names
-        self.surnames = surnames
-        self.phoneNumbers = phoneNumbers
-        self.emails = emails
-    }
+    init() {}
     
 }
 
