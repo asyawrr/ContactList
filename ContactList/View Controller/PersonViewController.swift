@@ -16,11 +16,12 @@ class PersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = person.fullName
 
         emailLabel.text = "E-mail: \(person.email)"
         phoneLabel.text = "Phone: \(person.phoneNumber)"
         
-        title = person.fullName
     }
 
 

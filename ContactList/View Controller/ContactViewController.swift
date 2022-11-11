@@ -13,8 +13,7 @@ class ContactViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = 80
+        tableView.rowHeight = 60
     }
 
     // MARK: - Table view data source
@@ -41,17 +40,19 @@ class ContactViewController: UITableViewController {
         
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let contact = persons[indexPath.row]
-        performSegue(withIdentifier: "show", sender: contact)
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        let contact = persons[indexPath.row]
+//        performSegue(withIdentifier: "show", sender: contact)
+//    }
+    
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let personInfoVC = segue.destination as? PersonViewController else { return }
-        personInfoVC.person = sender as? Person
+        personInfoVC.person = persons[indexPath.row]
     }
 
 }

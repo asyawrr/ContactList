@@ -107,20 +107,20 @@
         <!--Person View Controller-->
         <scene sceneID="8g7-N1-Hsh">
             <objects>
-                <viewController id="0d0-DU-Rmv" customClass="PersonViewController" sceneMemberID="viewController">
+                <viewController id="0d0-DU-Rmv" customClass="PersonViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3g-cI-SMC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-Cg-BK2">
-                                <rect key="frame" x="40" y="192.5" width="62" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-Cg-BK2">
+                                <rect key="frame" x="40" y="189" width="62" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBM-2g-Hi7">
-                                <rect key="frame" x="40" y="129" width="67" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <rect key="frame" x="40" y="129" width="67" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -130,10 +130,10 @@
                         <constraints>
                             <constraint firstItem="PBM-2g-Hi7" firstAttribute="top" secondItem="RXp-f7-Fcn" secondAttribute="top" constant="36.5" id="NWD-s0-PCY"/>
                             <constraint firstItem="A9H-Cg-BK2" firstAttribute="leading" secondItem="RXp-f7-Fcn" secondAttribute="leading" constant="40" id="T4T-fD-aF8"/>
-                            <constraint firstItem="RXp-f7-Fcn" firstAttribute="trailing" secondItem="A9H-Cg-BK2" secondAttribute="trailing" constant="218" id="bXv-uh-X61"/>
+                            <constraint firstItem="RXp-f7-Fcn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="A9H-Cg-BK2" secondAttribute="trailing" constant="218" id="bXv-uh-X61"/>
                             <constraint firstItem="A9H-Cg-BK2" firstAttribute="top" secondItem="PBM-2g-Hi7" secondAttribute="bottom" constant="36" id="pf9-4V-9Ns"/>
                             <constraint firstItem="PBM-2g-Hi7" firstAttribute="leading" secondItem="RXp-f7-Fcn" secondAttribute="leading" constant="40" id="sk3-pG-waa"/>
-                            <constraint firstItem="RXp-f7-Fcn" firstAttribute="trailing" secondItem="PBM-2g-Hi7" secondAttribute="trailing" constant="213" id="y1Z-P3-WSR"/>
+                            <constraint firstItem="RXp-f7-Fcn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PBM-2g-Hi7" secondAttribute="trailing" constant="213" id="y1Z-P3-WSR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JF9-6G-QqF"/>
@@ -165,7 +165,7 @@
         <!--Persons List-->
         <scene sceneID="yYy-R9-Fr6">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5Ag-Wa-cIo" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5Ag-Wa-cIo" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="Rlb-fu-DUU"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bLW-Gg-AAI">

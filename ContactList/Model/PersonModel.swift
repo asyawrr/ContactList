@@ -29,20 +29,12 @@ extension Person{
     let surnames = source.surnames.shuffled()
     let phoneNumbers = source.phoneNumbers.shuffled()
     let emails = source.emails.shuffled()
+
     
-    var personData: [[String]] = [[]]
-    personData.append(names)
-    personData.append(surnames)
-    personData.append(phoneNumbers)
-    personData.append(emails)
-    
-    var personsCount: Int = 0
-    
-    for datum in personData {
-        if datum.count <= personsCount {
-            personsCount = datum.count
-        }
-    }
+    let personsCount: Int = min(
+        names.count, surnames.count, phoneNumbers.count, emails.count
+    )
+        
     
     for index in 0..<personsCount{
         let person = Person(
