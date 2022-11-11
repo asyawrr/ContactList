@@ -9,25 +9,33 @@
 /* Begin PBXBuildFile section */
 		92146F33291C2FAF003DE5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F32291C2FAF003DE5E6 /* AppDelegate.swift */; };
 		92146F35291C2FAF003DE5E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F34291C2FAF003DE5E6 /* SceneDelegate.swift */; };
-		92146F37291C2FAF003DE5E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F36291C2FAF003DE5E6 /* ViewController.swift */; };
+		92146F37291C2FAF003DE5E6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F36291C2FAF003DE5E6 /* ContactViewController.swift */; };
 		92146F3A291C2FAF003DE5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92146F38291C2FAF003DE5E6 /* Main.storyboard */; };
 		92146F3C291C2FB1003DE5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92146F3B291C2FB1003DE5E6 /* Assets.xcassets */; };
 		92146F3F291C2FB1003DE5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92146F3D291C2FB1003DE5E6 /* LaunchScreen.storyboard */; };
 		92146F47291C32F4003DE5E6 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F46291C32F4003DE5E6 /* PersonModel.swift */; };
 		92146F4D291DAE31003DE5E6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92146F4C291DAE31003DE5E6 /* DataStore.swift */; };
+		92D283CD291EC30B00D66396 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D283CC291EC30B00D66396 /* ContactInfoViewController.swift */; };
+		92D283CF291ECCC300D66396 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D283CE291ECCC300D66396 /* NavigationViewController.swift */; };
+		92D283D1291ECFBB00D66396 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D283D0291ECFBB00D66396 /* TabBarViewController.swift */; };
+		92D283D3291ED63900D66396 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D283D2291ED63900D66396 /* PersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92146F2F291C2FAF003DE5E6 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92146F32291C2FAF003DE5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92146F34291C2FAF003DE5E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92146F36291C2FAF003DE5E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92146F36291C2FAF003DE5E6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		92146F39291C2FAF003DE5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92146F3B291C2FB1003DE5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92146F3E291C2FB1003DE5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92146F40291C2FB1003DE5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92146F46291C32F4003DE5E6 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		92146F4C291DAE31003DE5E6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		92D283CC291EC30B00D66396 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		92D283CE291ECCC300D66396 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		92D283D0291ECFBB00D66396 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		92D283D2291ED63900D66396 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,11 @@
 		92146F4B291C34D1003DE5E6 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92146F36291C2FAF003DE5E6 /* ViewController.swift */,
+				92146F36291C2FAF003DE5E6 /* ContactViewController.swift */,
+				92D283CC291EC30B00D66396 /* ContactInfoViewController.swift */,
+				92D283CE291ECCC300D66396 /* NavigationViewController.swift */,
+				92D283D0291ECFBB00D66396 /* TabBarViewController.swift */,
+				92D283D2291ED63900D66396 /* PersonViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -184,11 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D283D1291ECFBB00D66396 /* TabBarViewController.swift in Sources */,
 				92146F47291C32F4003DE5E6 /* PersonModel.swift in Sources */,
-				92146F37291C2FAF003DE5E6 /* ViewController.swift in Sources */,
+				92146F37291C2FAF003DE5E6 /* ContactViewController.swift in Sources */,
 				92146F33291C2FAF003DE5E6 /* AppDelegate.swift in Sources */,
 				92146F4D291DAE31003DE5E6 /* DataStore.swift in Sources */,
 				92146F35291C2FAF003DE5E6 /* SceneDelegate.swift in Sources */,
+				92D283CF291ECCC300D66396 /* NavigationViewController.swift in Sources */,
+				92D283D3291ED63900D66396 /* PersonViewController.swift in Sources */,
+				92D283CD291EC30B00D66396 /* ContactInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
