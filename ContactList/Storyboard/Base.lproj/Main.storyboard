@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3vH-cn-2dG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fullInfoCell" id="3vH-cn-2dG">
                                 <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3vH-cn-2dG" id="nt1-Wv-g1o">
@@ -88,7 +88,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="0d0-DU-Rmv" kind="show" id="BSi-xy-ewC"/>
+                                    <segue destination="0d0-DU-Rmv" kind="show" identifier="show" id="BSi-xy-ewC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="705" y="1249"/>
         </scene>
-        <!--Navigation View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="ejF-KM-ZV1">
             <objects>
-                <navigationController id="NyR-du-Dtb" customClass="NavigationViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="NyR-du-Dtb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Xje-fo-eft">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>

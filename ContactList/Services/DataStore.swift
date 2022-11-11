@@ -40,8 +40,6 @@ class DataStore {
         "swordsman@gmail.com", "pillowsLover@gmail.com"
     ]
     
-    static let source = DataStore()
-    
     init() {}
     
 }
