@@ -49,3 +49,7 @@ extension Person{
     }
 }
 
+enum infoImages {
+    case phone
+    case email
+}
