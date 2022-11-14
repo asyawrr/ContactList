@@ -48,8 +48,3 @@ extension Person{
     return persons
     }
 }
-
-enum infoImages {
-    case phone
-    case email
-}
