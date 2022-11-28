@@ -7,9 +7,11 @@
 
 import Foundation
 
-let source = DataStore().self
+
 
 struct Person{
+    
+    static let source = DataStore()
     
     let name: String
     let surname: String
@@ -31,7 +33,7 @@ extension Person{
     let emails = source.emails.shuffled()
 
     
-    let personsCount: Int = min(
+    let personsCount = min(
         names.count, surnames.count, phoneNumbers.count, emails.count
     )
         

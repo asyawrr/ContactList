@@ -9,14 +9,14 @@ import Foundation
 
 class DataStore {
     
-    var names = [
+    let names = [
         "Naruto", "Sasuke", "Kakashi",
         "Sakura", "Zabuza", "Hinata",
         "Shino", "Shikamaru", "Chouji",
         "Konohamaru"
     ]
     
-    var surnames = [
+    let surnames = [
         "Uzumaki", "Uchiha", "Haruno",
         "Hatake", "Hyuga",
         "Momochi", "Aburame",
@@ -24,7 +24,7 @@ class DataStore {
         "Sarutobi"
     ]
     
-    var phoneNumbers = [
+    let phoneNumbers = [
         "123456", "654321", "135790",
         "097531", "246802",
         "208642", "123789",
@@ -32,7 +32,7 @@ class DataStore {
         "987654"
     ]
     
-    var emails = [
+    let emails = [
         "futureHokage@gmail.com", "revenger@gmail.com",
         "girrrlPower@gmail.com", "bestTeacherEver@gmail.com",
         "chipsIsLife@gmail.com", "loveBugs@gmail.com",

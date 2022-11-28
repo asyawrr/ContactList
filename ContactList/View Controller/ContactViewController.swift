@@ -9,7 +9,7 @@ import UIKit
 
 class ContactViewController: UITableViewController {
     
-    var persons = Person.getPersons()
+    var persons: [Person] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +17,6 @@ class ContactViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count

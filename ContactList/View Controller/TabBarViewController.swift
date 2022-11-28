@@ -25,10 +25,12 @@ class TabBarViewController: UITabBarController {
 //            } else {
 //                return
 //            }
+        let persons = Person.getPersons()
+        
         guard let contactVC = viewControllers?.first as? ContactViewController else { return }
         guard let infoVC = viewControllers?.last as? ContactInfoViewController else { return }
-
-        contactVC.persons = Person.getPersons()
-        infoVC.persons = Person.getPersons()
+    
+        contactVC.persons = persons
+        infoVC.persons = persons
     }
 }
